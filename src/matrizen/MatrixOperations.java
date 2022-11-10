@@ -6,18 +6,21 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MatrixOperations {
-    private final static String PATH_NAME="src/matrix.txt";
 
-    public static int[][] readMatrix() throws FileNotFoundException {
-            Scanner fileReader = new Scanner(new File(MatrixOperations.PATH_NAME));
-            //Zählen der Anzahl Zeilen
+    public static int[][] readMatrix(String path) throws FileNotFoundException {
+            Scanner fileReader = new Scanner(new File(path));
+            //Zählen der Anzahl Zeilen und der längsten Zeile
             int rows=0;
+            int longLine=0;
             while(fileReader.hasNext()){
+                if(longLine<fileReader.nextLine().length()){
+                    longLine=fileReader.nextLine().length();
+                }
                 rows++;
             }
 
             //Erzeugen eines 2D-Arrays mit der richtigen Grösse.
-            int[][] matrix = new int[rows][fileReader.nextLine().length()];
+            int[][] matrix = new int[rows][longLine];
 
             //Hilfsvariable, welche angibt, welche Zeile wir gerade einlesen
             int rowcounter = 1;
@@ -35,7 +38,6 @@ public class MatrixOperations {
                 int gaps = 0;
                 String nextNumber = "";
                 for(int i=0; i<nextLine.length();i++){
-
                     if(nextLine.charAt(i)  != ' '){
                         nextNumber =""+nextLine.charAt(i);
                     } else{
