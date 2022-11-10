@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="add files">
-      <change afterPath="$PROJECT_DIR$/src/vlol.java" afterDir="false" />
+    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="main">
+      <change afterPath="$PROJECT_DIR$/src/matrizen/MatrixOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/matrizen/MatrixTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vlol.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667562824867</updated>
-      <workItem from="1667562826065" duration="452000" />
+      <workItem from="1667562826065" duration="7051000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1667562976451</created>
@@ -52,7 +55,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667562976451</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add files">
+      <created>1667563287714</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667563287714</updated>
+    </task>
+    <task id="LOCAL-00003" summary="main">
+      <created>1667563484838</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667563484838</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -63,7 +80,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -71,6 +100,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add files" />
+    <MESSAGE value="main" />
+    <option name="LAST_COMMIT_MESSAGE" value="main" />
   </component>
 </project>

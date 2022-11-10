@@ -1,4 +1,6 @@
-public class vlol {
+package matrizen;
+
+public class MatrixTest {
     public static void main(String[] args) {
 
     }
