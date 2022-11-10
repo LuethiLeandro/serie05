@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class MatrixOperations {
     private final static String PATH_NAME="src/matrix.txt";
 
-    public static void readMatrix() throws FileNotFoundException {
+    public static int[][] readMatrix() throws FileNotFoundException {
             Scanner fileReader = new Scanner(new File(MatrixOperations.PATH_NAME));
             //Zählen der Anzahl Zeilen
             int rows=0;
@@ -29,18 +29,24 @@ public class MatrixOperations {
                 String nextLine = fileReader.nextLine();
 
                 /*Schleife geht jedes Zeichen der Zeile durch,
-                wenn kein Leerzeichen vorhanden ist, wird das Zeichen in den nächsten freien Arrayslot
-                der Zeile gespeichert. Gaps werden gezählt, um keine leeren Stellen im Array zu haben*/
+                wenn das Zeichen kein Leerzeichen ist, wird es in den Array nextNumber gespeichert.
+                Falls ein Leerzeichen vorhanden ist, wird in den richtigen Arrayslot die Zahl gespeichert,
+                der String nectNumber wird reseted und gaps wird erhöht.*/
                 int gaps = 0;
+                String nextNumber = "";
                 for(int i=0; i<nextLine.length();i++){
+
                     if(nextLine.charAt(i)  != ' '){
-                        matrix[rowcounter][i-gaps] = Integer.parseInt(String.valueOf(nextLine.charAt(i)));
+                        nextNumber =""+nextLine.charAt(i);
                     } else{
+                        matrix[rowcounter][i-gaps] = Integer.parseInt(String.valueOf(nextNumber));
+                        nextNumber="";
                         gaps++;
                     }
                 }
                 rowcounter++;
             }
+            return matrix;
     }
 
 }
