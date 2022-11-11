@@ -24,7 +24,6 @@ public class MatrixOperations {
 
             //Hilfsvariable, welche angibt, welche Zeile wir gerade einlesen
             int rowcounter = 1;
-
             //Schleife geht jede Zeile durch
             while (fileReader.hasNext()) {
 
@@ -41,7 +40,7 @@ public class MatrixOperations {
                     if(nextLine.charAt(i)  != ' '){
                         nextNumber =""+nextLine.charAt(i);
                     } else{
-                        matrix[rowcounter][i-gaps] = Integer.parseInt(String.valueOf(nextNumber));
+                        matrix[rowcounter][gaps+1] = Integer.parseInt(String.valueOf(nextNumber));
                         nextNumber="";
                         gaps++;
                     }
