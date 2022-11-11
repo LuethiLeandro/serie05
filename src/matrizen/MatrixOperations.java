@@ -33,11 +33,9 @@ public class MatrixOperations {
             //Hilfsvariable, welche angibt, welche Zeile wir gerade einlesen
             int rowcounter = 1;
             //Schleife geht jede Zeile durch
-            while (fileReader2.hasNext()) {
-
+            while (rowcounter<=rows) {
                 //liest Zeile ein
                 String nextLine = fileReader2.nextLine();
-
                 /*Schleife geht jedes Zeichen der Zeile durch,
                 wenn das Zeichen kein Leerzeichen ist, wird es in den Array nextNumber gespeichert.
                 Falls ein Leerzeichen vorhanden ist, wird in den richtigen Arrayslot die Zahl gespeichert,
@@ -46,7 +44,8 @@ public class MatrixOperations {
                 Scanner lineScanner = new Scanner(nextLine);
                 lineScanner.useDelimiter(" ");
                 while (lineScanner.hasNext()) {
-                      matrix[rowcounter][gaps] = Integer.parseInt(lineScanner.next());
+                      matrix[rowcounter-1][gaps] = lineScanner.nextInt();
+                      gaps++;
                 }
                 rowcounter++;
             }

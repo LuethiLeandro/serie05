@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="still problems">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serie05.iml" beforeDir="false" afterPath="$PROJECT_DIR$/serie05.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/matrizen/MatrixOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrizen/MatrixOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matrizen/MatrixTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrizen/MatrixTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667562824867</updated>
-      <workItem from="1667562826065" duration="21513000" />
+      <workItem from="1667562826065" duration="23299000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1667562976451</created>
@@ -112,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668157844939</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="still problems">
+      <created>1668203757703</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668203757703</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +153,8 @@
     <MESSAGE value=" ergänzung für Mehrstellige Zahlen" />
     <MESSAGE value="Longest line etc." />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="still problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="still problems" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
