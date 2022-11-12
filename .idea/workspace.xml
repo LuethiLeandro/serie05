@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="still problems">
+    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="it works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/matrizen/MatrixOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrizen/MatrixOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/matrizen/MatrixTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrizen/MatrixTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667562824867</updated>
-      <workItem from="1667562826065" duration="23299000" />
+      <workItem from="1667562826065" duration="30783000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1667562976451</created>
@@ -116,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668203757703</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="it works">
+      <created>1668205580942</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668205580943</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +162,8 @@
     <MESSAGE value="Longest line etc." />
     <MESSAGE value="fix" />
     <MESSAGE value="still problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="still problems" />
+    <MESSAGE value="it works" />
+    <option name="LAST_COMMIT_MESSAGE" value="it works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -29,18 +29,18 @@ public class MatrixOperations {
 
             //Instanzierung eines 2D-Arrays mit der richtigen Grösse.
             int[][] matrix = new int[rows][longLine-1];
-             Scanner fileReader2 = new Scanner(new File(path));
+
+            //neuer Scanner, da Zeilen erneut  durchgegangen werden müssen
+            Scanner fileReader2 = new Scanner(new File(path));
             //Hilfsvariable, welche angibt, welche Zeile wir gerade einlesen
             int rowcounter = 1;
             //Schleife geht jede Zeile durch
             while (rowcounter<=rows) {
                 //liest Zeile ein
                 String nextLine = fileReader2.nextLine();
-                /*Schleife geht jedes Zeichen der Zeile durch,
-                wenn das Zeichen kein Leerzeichen ist, wird es in den Array nextNumber gespeichert.
-                Falls ein Leerzeichen vorhanden ist, wird in den richtigen Arrayslot die Zahl gespeichert,
-                der String nectNumber wird reseted und gaps wird erhöht.*/
                 int gaps = 0;
+                //Geht jede Zahl durch, welche von Leerzeichen getrennt sind und speichert
+                //diese in das Array
                 Scanner lineScanner = new Scanner(nextLine);
                 lineScanner.useDelimiter(" ");
                 while (lineScanner.hasNext()) {
@@ -52,4 +52,20 @@ public class MatrixOperations {
             return matrix;
     }
 
+    public static int[][] transpose(int[][] matrix){
+
+        int transition=0;
+        for(int i=0;i<matrix.length-1;i++){
+            if(matrix.length<=1 || matrix.length!=matrix[i].length){
+                return null;
+            }
+            for(int j=0; j<matrix[i].length-1; j++){
+                  int temp = matrix[i][j+transition];
+                  matrix[i][j+transition]=matrix[j+transition][i];
+                  matrix[j+transition][i]=temp;
+            }
+            transition++;
+        }
+        return matrix;
+    }
 }
