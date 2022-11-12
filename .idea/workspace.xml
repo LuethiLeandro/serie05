@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="it works">
+    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="b) works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/matrizen/MatrixOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrizen/MatrixOperations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/matrizen/MatrixTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrizen/MatrixTest.java" afterDir="false" />
@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667562824867</updated>
-      <workItem from="1667562826065" duration="30783000" />
+      <workItem from="1667562826065" duration="38914000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1667562976451</created>
@@ -124,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668205580943</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="b) works">
+      <created>1668260766239</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668260766239</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +170,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="still problems" />
     <MESSAGE value="it works" />
-    <option name="LAST_COMMIT_MESSAGE" value="it works" />
+    <MESSAGE value="b) works" />
+    <option name="LAST_COMMIT_MESSAGE" value="b) works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -171,6 +179,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.util.NoSuchElementException" package="java.util" />
           <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="6" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
