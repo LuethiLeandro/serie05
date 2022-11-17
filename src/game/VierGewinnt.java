@@ -111,47 +111,70 @@ public class VierGewinnt
 		if(board[col][row]==Token.empty){
 			return false;
 		}
-		if(row-3>=0 && board[col][row]==board[col][row-1] &&
+
+		if(row-3>=0 && board[col][row]==board[col][row-1] && //nach unten
 				board[col][row]==board[col][row-2] &&
 				board[col][row]==board[col][row-3]){
 			return true;
 		}
-		else if(row+3<=ROWS && board[col][row]==board[col][row+1] &&
-				board[col][row]==board[col][row+2] &&
-				board[col][row]==board[col][row+3]){
+		else if((col+3<COLS 						&&	// rechts und links
+				board[col][row]==board[col+1][row] 	&&
+				board[col][row]==board[col+2][row] 	&&
+				board[col][row]==board[col+3][row])		||
+				(col-1>=0 && col+2<COLS 			&&
+				board[col][row]==board[col-1][row] 	&&
+				board[col][row]==board[col+1][row] 	&&
+				board[col][row]==board[col+2][row]) 	||
+				(col-2>=0 && col+1<COLS 			&&
+				board[col][row]==board[col-2][row] 	&&
+				board[col][row]==board[col-1][row] 	&&
+				board[col][row]==board[col+1][row])		||
+				(col-3>=0 							&&
+				board[col][row]==board[col-1][row] 	&&
+				board[col][row]==board[col-2][row] 	&&
+				board[col][row]==board[col-3][row])){
 			return true;
 		}
-		else if(col-3>=0 && board[col][row]==board[col-1][row] &&
-				board[col][row]==board[col-2][row] &&
-				board[col][row]==board[col-3][row]){
+		else if((col-3>=0 && row-3>=0 					&&
+				board[col][row]==board[col-1][row-1]	&& 	//von unten-links nach oben-rechts
+				board[col][row]==board[col-2][row-2] 	&&
+				board[col][row]==board[col-3][row-3])		||
+				(col-2>=0 && row-2>=0 					&&
+				col+1<COLS && row+1<ROWS				&&
+				board[col][row]==board[col-2][row-2]	&&
+				board[col][row]==board[col-1][row-1] 	&&
+				board[col][row]==board[col+1][row+1])		||
+				(col-1>=0 && row-1>=0 					&&
+				col+2<COLS && row+2<ROWS				&&
+				board[col][row]==board[col-1][row-1]	&&
+				board[col][row]==board[col+1][row+1] 	&&
+				board[col][row]==board[col+2][row+2])		||
+				(col+3<COLS && row+3<ROWS				&&
+				board[col][row]==board[col+1][row+1]	&&
+				board[col][row]==board[col+2][row+2] 	&&
+				board[col][row]==board[col+3][row+3])){
 			return true;
 		}
-		else if(col+3<=COLS && board[col][row]==board[col+1][row] &&
-				board[col][row]==board[col+2][row] &&
-				board[col][row]==board[col+3][row]){
+		else if((col+3<COLS && row-3>=0 				&& 		//von oben-links nach unten-rechts
+				board[col][row]==board[col+1][row-1] 	&&
+				board[col][row]==board[col+2][row-2] 	&&
+				board[col][row]==board[col+3][row-3])		||
+				(col+2<COLS && row-2>=0				&&
+				col-1>=0 && row+1<ROWS					&&
+				board[col][row]==board[col+1][row-1] 	&&
+				board[col][row]==board[col+2][row-2] 	&&
+				board[col][row]==board[col-1][row+1])		||
+				(col+1<COLS && row-1>=0					&&
+				col-2>=0 && row+2<ROWS					&&
+				board[col][row]==board[col+1][row-1] 	&&
+				board[col][row]==board[col-1][row+1] 	&&
+				board[col][row]==board[col-2][row+2])		||
+				(col-3>=0 && row+3<ROWS					&&
+				board[col][row]==board[col-1][row+1] 	&&
+				board[col][row]==board[col-2][row+2] 	&&
+				board[col][row]==board[col-3][row+3])){
 			return true;
 		}
-		else if(col-3>=0 && row-3>=0 && board[col][row]==board[col-1][row-1] &&
-				board[col][row]==board[col-2][row-2] &&
-				board[col][row]==board[col-3][row-3]){
-			return true;
-		}
-		else if(col+3<=COLS && row+3<=ROWS && board[col][row]==board[col+1][row+1] &&
-				board[col][row]==board[col+2][row+2] &&
-				board[col][row]==board[col+3][row+3]){
-			return true;
-		}
-		else if(col+3<=COLS && row-3>=0 && board[col][row]==board[col+1][row-1] &&
-				board[col][row]==board[col+2][row-2] &&
-				board[col][row]==board[col+3][row-3]){
-			return true;
-		}
-		else if(col-3>=0 && row+3>=0 && board[col][row]==board[col-1][row+1] &&
-				board[col][row]==board[col-2][row+2] &&
-				board[col][row]==board[col-3][row+3]){
-			return true;
-		}
-
 		else{
 			return false;
 		}
