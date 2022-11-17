@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="same errors">
+    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="seems to work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/ComputerPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/ComputerPlayer.java" afterDir="false" />
     </list>
@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667562824867</updated>
-      <workItem from="1667562826065" duration="70361000" />
+      <workItem from="1667562826065" duration="71678000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1667562976451</created>
@@ -208,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668711029693</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="seems to work">
+      <created>1668713073229</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1668713073229</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +263,8 @@
     <MESSAGE value="ex.1 computerplayer" />
     <MESSAGE value="better" />
     <MESSAGE value="same errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="same errors" />
+    <MESSAGE value="seems to work" />
+    <option name="LAST_COMMIT_MESSAGE" value="seems to work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -273,7 +281,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/serie05$VierGewinnt.ic" NAME="VierGewinnt Coverage Results" MODIFIED="1668712352741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/serie05$VierGewinnt.ic" NAME="VierGewinnt Coverage Results" MODIFIED="1668713260930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>game.*</FILTER>
     </SUITE>
   </component>

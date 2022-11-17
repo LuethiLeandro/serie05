@@ -16,7 +16,7 @@ public class ComputerPlayer implements IPlayer
 	 */
 	public int getNextColumn( Token[][] board ){
 		//Was der ComputerPlayer spielen kann
-		if(findBestColumn(board)!=-1 || findBestColumn(board)!=0){
+		if(findBestColumn(board)!=-2){
 			return findBestColumn(board);
 		} else {
 			java.util.Random generator = new java.util.Random();
@@ -78,8 +78,15 @@ public class ComputerPlayer implements IPlayer
 		//die Position von der Zahl strongest im Array wird zurückgegeben
 		//Falls es ein Fehler gäbe gibt es -1 zurück und der Computer spielt nach zufall
 		int strongest=0;
+		int count=0;
 		for(int i=0; i<strengh.length; i++){
 			if(strongest<strengh[i]) strongest = strengh[i];
+			else if(strengh[i]==0){
+				count++;
+			}
+		}
+		if(count==7){
+			return -2;
 		}
 		for(int i=0; i<strengh.length;i++) {
 			if (strongest == strengh[i]) {
