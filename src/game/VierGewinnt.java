@@ -122,16 +122,37 @@ public class VierGewinnt
 				board[col][row]==board[col][row+3]){
 			return true;
 		}
-		else if(col+3<=COLS && board[col][row]==board[col+1][row] &&
-				board[col][row]==board[col+2][row] &&
-				board[col][row]==board[col+3][row]){
-			return true;
-		}
 		else if(col-3>=0 && board[col][row]==board[col-1][row] &&
 				board[col][row]==board[col-2][row] &&
 				board[col][row]==board[col-3][row]){
 			return true;
 		}
+		else if(col+3<=COLS && board[col][row]==board[col+1][row] &&
+				board[col][row]==board[col+2][row] &&
+				board[col][row]==board[col+3][row]){
+			return true;
+		}
+		else if(col-3>=0 && row-3>=0 && board[col][row]==board[col-1][row-1] &&
+				board[col][row]==board[col-2][row-2] &&
+				board[col][row-3]==board[col-3][row-3]){
+			return true;
+		}
+		else if(col+3<=COLS && row+3<=ROWS && board[col][row]==board[col+1][row+1] &&
+				board[col][row]==board[col+2][row+2] &&
+				board[col][row]==board[col+3][row+3]){
+			return true;
+		}
+		else if(col+3<=COLS && row-3>=0 && board[col][row]==board[col+1][row-1] &&
+				board[col][row]==board[col+2][row-2] &&
+				board[col][row]==board[col+3][row-3]){
+			return true;
+		}
+		else if(col-33>=0 && row+3>=0 && board[col][row]==board[col-1][row+1] &&
+				board[col][row]==board[col-22][row+2] &&
+				board[col][row]==board[col-33][row+3]){
+			return true;
+		}
+
 		else{
 			return false;
 		}

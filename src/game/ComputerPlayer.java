@@ -32,12 +32,13 @@ public class ComputerPlayer implements IPlayer
 	public int findBestColumn(Token[][] board ){
 		//Was der ComputerPlayer spielen kann
 		int[] possibilities = new int[7];
-		for(int i=0; i<board[0].length; i++){
-			int j=0;
-			while (board[j][i]!=Token.empty && j<board[i].length){
-				j++;
+		for(int i=0; i<board.length; i++){
+			for (int j = 0; j < board.length; j++){
+				if(board[i][j]==Token.empty){
+					possibilities[i]=j;
+					break;
+				}
 			}
-			possibilities[i] = j;
 		}
 		//rund um jeden Spot wird gezählt, wieviele von seinen Tokens in einer Linie liegen
 		//die längste Linie wird in den Array strengh gespeichert

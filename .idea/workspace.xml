@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="ex.1 computerplayer" />
+    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="ex.1 computerplayer">
+      <change beforePath="$PROJECT_DIR$/src/game/VierGewinnt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/VierGewinnt.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667562824867</updated>
-      <workItem from="1667562826065" duration="64828000" />
+      <workItem from="1667562826065" duration="66007000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1667562976451</created>
@@ -170,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668707116344</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ex.1 computerplayer">
+      <created>1668707280859</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668707280859</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +242,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/serie05$VierGewinnt.ic" NAME="VierGewinnt Coverage Results" MODIFIED="1668704179643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/serie05$VierGewinnt.ic" NAME="VierGewinnt Coverage Results" MODIFIED="1668707171023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>game.*</FILTER>
     </SUITE>
   </component>
