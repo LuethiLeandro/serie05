@@ -84,7 +84,7 @@ public class VierGewinnt
 			}
 		}
 		System.exit(1);
-		return 0; //Man soll dieses ersetzen, doch es wird ein Rückgabewert verlangt.
+		return -1; //Man soll dieses ersetzen, doch es wird ein Rückgabewert verlangt.
 	}
 
 

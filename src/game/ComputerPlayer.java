@@ -81,9 +81,10 @@ public class ComputerPlayer implements IPlayer
 		for(int i=0; i<strengh.length; i++){
 			if(strongest<strengh[i]) strongest = strengh[i];
 		}
-		//System.out.println(strongest);
 		for(int i=0; i<strengh.length;i++) {
 			if (strongest == strengh[i]) {
+				System.out.println("i: ");
+				System.out.println(i);
 				return i;
 			}
 		}
