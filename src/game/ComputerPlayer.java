@@ -3,8 +3,6 @@
 \* ************************************************************************* */
 package game;
 
-import java.util.Arrays;
-
 /** A very stupid computer player */
 public class ComputerPlayer implements IPlayer
 {
@@ -21,7 +19,6 @@ public class ComputerPlayer implements IPlayer
 		} else {
 			java.util.Random generator = new java.util.Random();
 			int col = generator.nextInt(board.length);
-			int step = 0;
 			while (isColFull(col, board)) {
 				col = (col + 1) % board.length;
 			}
@@ -30,6 +27,8 @@ public class ComputerPlayer implements IPlayer
 	}
 
 	public int findBestColumn(Token[][] board ){
+
+
 		//Was der ComputerPlayer spielen kann
 		int[] possibilities = new int[7];
 		for(int i=0; i<board.length; i++){
@@ -42,8 +41,9 @@ public class ComputerPlayer implements IPlayer
 		}
 		//rund um jeden Spot wird gezählt, wieviele von seinen Tokens in einer Linie liegen
 		//die längste Linie wird in den Array strengh gespeichert
-		System.out.println(Arrays.toString(possibilities));
 		int[] strengh = new int[7];
+		int deny=-1;
+
 		for(int i=0; i<board.length;i++) {
 			int c0= 0, c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0;
 			for (int j=1; j <= 3; j++) {
@@ -62,8 +62,42 @@ public class ComputerPlayer implements IPlayer
 				} else if (j == c6 + 1 && i + j < board.length && possibilities[i] + j < board[0].length && board[i + j][possibilities[i] + j] == Token.player2) {//nach oben rechts
 					c6++;
 				}
-			}
 
+				//Gegner am Sieg hindern
+				if( 	(possibilities[i]-3>=0 							&&		//nach unten
+						board[i][possibilities[i]-1] == Token.player1 	&&
+						board[i][possibilities[i]-2] == Token.player1 	&&
+						board[i][possibilities[i]-3] == Token.player1) 		||	//nach links
+						(i-3>=0 										&&
+						board[i-1][possibilities[i]] == Token.player1 	&&
+						board[i-2][possibilities[i]] == Token.player1 	&&
+						board[i-3][possibilities[i]] == Token.player1)		||	//nach unten links
+						(i-3>=0 && possibilities[i]-3>=0				&&
+						board[i-1][possibilities[i]-1]== Token.player1 	&&
+						board[i-2][possibilities[i]-2]== Token.player1 	&&
+						board[i-3][possibilities[i]-3]== Token.player1)		||	//nach rechts
+						(i+3<=board.length 								&&
+						board[i+1][possibilities[i]] == Token.player1 	&&
+						board[i+2][possibilities[i]] == Token.player1 	&&
+						board[i+3][possibilities[i]] == Token.player1)		|| 	//nach unten rechts
+						(i+3<=board.length 								&&
+						possibilities[i]-3>=0 							&&
+						board[i+1][possibilities[i]-1]== Token.player1 	&&
+						board[i+2][possibilities[i]-2]== Token.player1	&&
+						board[i+3][possibilities[i]-3]== Token.player1) 	||	//nach oben links
+						(i-3>=0 && possibilities[i]+3<=board[0].length 	&&
+						board[i-1][possibilities[i]+1]== Token.player1	&&
+						board[i-2][possibilities[i]+2]== Token.player1	&&
+						board[i-3][possibilities[i]+3]== Token.player1)		|| //nach oben rechts
+						(i+3<= board.length  							&&
+						possibilities[i]+3<=board[0].length				&&
+						board[i+1][possibilities[i]+1]== Token.player1 	&&
+						board[i+2][possibilities[i]+2]== Token.player1	&&
+						board[i+3][possibilities[i]+3]== Token.player1)){
+					deny=i;
+				}
+
+			}
 			if (c0 < c1) c0 = c1;
 			if (c0 < c2) c0 = c2;
 			if (c0 < c3) c0 = c3;
@@ -73,7 +107,8 @@ public class ComputerPlayer implements IPlayer
 			strengh[i] = c0;
 		}
 
-		System.out.println(Arrays.toString(strengh));
+
+
 		//die längste linie Aller Spots wird in int strongest gespeichert
 		//die Position von der Zahl strongest im Array wird zurückgegeben
 		//Falls es ein Fehler gäbe gibt es -1 zurück und der Computer spielt nach zufall
@@ -88,10 +123,14 @@ public class ComputerPlayer implements IPlayer
 		if(count==7){
 			return -2;
 		}
+
+		//Vermassel Sieg von Mensch, wenn Computer nicht selbst direkt gewinnen kann
+		if(strongest<3 && deny!=-1){
+			return deny;
+		}
+
 		for(int i=0; i<strengh.length;i++) {
 			if (strongest == strengh[i]) {
-				System.out.println("i: ");
-				System.out.println(i);
 				return i;
 			}
 		}

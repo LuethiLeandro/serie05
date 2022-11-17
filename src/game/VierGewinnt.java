@@ -103,7 +103,6 @@ public class VierGewinnt
 		return true;
 	}
 
-
 	/**
 	 * Checks for at least four equal tokens in a row in
 	 * either direction, starting from the given position. 
