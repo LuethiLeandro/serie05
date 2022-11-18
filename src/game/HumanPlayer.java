@@ -1,6 +1,11 @@
 /* ************************************************************************* *\
 *                Programmierung 1 HS 2020 - Serie 5-1                         * 
 \* ************************************************************************* */
+
+
+// Pascal Zürcher, Matrikelnummer: 22-111-314
+// Leandro Lüthi. Matrikelnummer: 22-105-035
+
 package game;
 
 import java.util.Scanner;

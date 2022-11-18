@@ -3,6 +3,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+// Pascal Zürcher, Matrikelnummer: 22-111-314
+// Leandro Lüthi. Matrikelnummer: 22-105-035
+
 public class MatrixOperations {
 
     public static int[][] readMatrix(String path)

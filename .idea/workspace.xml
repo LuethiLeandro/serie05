@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="seems to work">
+    <list default="true" id="765a500b-1b26-4a50-bdac-63af5335f746" name="Changes" comment="c) works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/VierGewinnt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/VierGewinnt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +39,7 @@
     "WebServerToolWindowFactoryState": "false",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -52,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667562824867</updated>
-      <workItem from="1667562826065" duration="80226000" />
+      <workItem from="1667562826065" duration="39756000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1667562976451</created>
@@ -138,98 +136,7 @@
       <option name="project" value="LOCAL" />
       <updated>1668269285408</updated>
     </task>
-    <task id="LOCAL-00013" summary="ex. 1 basics">
-      <created>1668270058702</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1668270058702</updated>
-    </task>
-    <task id="LOCAL-00014" summary="ex1. few things added but the game doesn't start as it should">
-      <created>1668357786341</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1668357786341</updated>
-    </task>
-    <task id="LOCAL-00015" summary="ex1. seems to work">
-      <created>1668359275914</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1668359275914</updated>
-    </task>
-    <task id="LOCAL-00016" summary="ex1. the better computerplayer doesn't work, because of IndexOutOfBoundsException">
-      <created>1668373498894</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1668373498894</updated>
-    </task>
-    <task id="LOCAL-00017" summary="ex.1 computerplayer">
-      <created>1668707116344</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1668707116344</updated>
-    </task>
-    <task id="LOCAL-00018" summary="ex.1 computerplayer">
-      <created>1668707280859</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1668707280859</updated>
-    </task>
-    <task id="LOCAL-00019" summary="better">
-      <created>1668708449877</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1668708449877</updated>
-    </task>
-    <task id="LOCAL-00020" summary="better">
-      <created>1668708840025</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1668708840025</updated>
-    </task>
-    <task id="LOCAL-00021" summary="better">
-      <created>1668708972561</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1668708972561</updated>
-    </task>
-    <task id="LOCAL-00022" summary="same errors">
-      <created>1668711029693</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1668711029693</updated>
-    </task>
-    <task id="LOCAL-00023" summary="seems to work">
-      <created>1668713073229</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1668713073229</updated>
-    </task>
-    <task id="LOCAL-00024" summary="seems to work">
-      <created>1668714112415</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1668714112415</updated>
-    </task>
-    <task id="LOCAL-00025" summary="seems to work">
-      <created>1668720398485</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1668720398485</updated>
-    </task>
-    <option name="localTasksCounter" value="26" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,15 +177,7 @@
     <MESSAGE value="it works" />
     <MESSAGE value="b) works" />
     <MESSAGE value="c) works" />
-    <MESSAGE value="ex. 1 basics" />
-    <MESSAGE value="ex1. few things added but the game doesn't start as it should" />
-    <MESSAGE value="ex1. seems to work" />
-    <MESSAGE value="ex1. the better computerplayer doesn't work, because of IndexOutOfBoundsException" />
-    <MESSAGE value="ex.1 computerplayer" />
-    <MESSAGE value="better" />
-    <MESSAGE value="same errors" />
-    <MESSAGE value="seems to work" />
-    <option name="LAST_COMMIT_MESSAGE" value="seems to work" />
+    <option name="LAST_COMMIT_MESSAGE" value="c) works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -293,10 +192,5 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/serie05$VierGewinnt.ic" NAME="VierGewinnt Coverage Results" MODIFIED="1668723228378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>game.*</FILTER>
-    </SUITE>
   </component>
 </project>
